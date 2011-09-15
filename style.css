@@ -1,0 +1,63 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #fff;
+    color: #111;
+    
+    margin: 0em auto 0em;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:visited, a:hover {
+    outline: none;
+    color: #3366ff;
+}
+
+#content {
+    position: absolute;
+    left: 50%;
+    margin-left: -19em;
+    width: 38em;
+}
+
+#hello {
+    font-size: 7em;
+    margin: 1em 0 0 0;
+}
+
+p {
+    font-family: Helvetica, Arial, "Sans Serif", serif;
+    font-size: 11pt;
+    line-height: 1.5em;
+    margin-left: 40px;
+    margin-right: 30px;
+    color: #333;
+}
+
+#research {
+    margin-top: 2em;
+}
+
+#consulting {
+    margin-top: 1em;
+}
+
+#projects {
+    margin-top: 1em;
+}
+
+#follow {
+    margin-top: 1em;
+}
+
+em.highlight {
+    background-color: #ffa;
+    color: #222;
+    font-style: normal;
+}
