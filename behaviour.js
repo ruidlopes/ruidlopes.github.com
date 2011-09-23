@@ -22,7 +22,7 @@ $(function() {
 
     // ensures that when on top, "about" is the correct anchor
     doc.scroll(function() {
-        doc.scrollTop() == 0 && highlight(0, "about");
+        doc.scrollTop() <= 0 && highlight(0, "about");
     });
 
     links.smoothScroll();
