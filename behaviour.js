@@ -9,23 +9,23 @@ $(function() {
     };
 
     // highlights a menu item
-    var highlight = function(e, anchor) {
+    var highlight = function(anchor) {
         $(".highlighted").removeClass("highlighted");
         (anchor ? anchorById(anchor) : $(this)).parent().addClass("highlighted");
     };
 
     // changes menu highlight according to scroll
     $("#content section").waypoint(function() {
-        highlight(0, $(this).attr("id"));
+        highlight($(this).attr("id"));
     });
 
     // ensures that when on top, "about" is the correct anchor
     doc.scroll(function() {
-        doc.scrollTop() <= 0 && highlight(0, "about");
+        doc.scrollTop() <= 0 && highlight("about");
     });
 
     $("#sidebar nav a").smoothScroll();
 
     // first menu item highlighted by default
-    highlight(0, "about");
+    highlight("about");
 });
