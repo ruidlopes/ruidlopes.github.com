@@ -51,9 +51,15 @@ ul li {
     color: #666;
 }
 
+#sidebar nav {
+    position: absolute;
+    top: 8em;
+    width: 200px;
+}
+
 #sidebar ul {
     list-style-type: none;
-    margin: 2em 0 0 0;
+    margin: 0;
     padding: 0;
 
     font-size: 14pt;
@@ -63,22 +69,36 @@ ul li {
     border-bottom: 1px solid #f0f0f0;
     margin: 0;
     padding: 0;
+    position: relative;
+}
+
+#sidebar ul li.highlighted:after {
+    border-color: transparent transparent transparent #fff;
+    border-width: 19px;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    left: 200px;
+    top: 0;
 }
 
 #sidebar ul li a {
-    display: inline-block;
-    width: 100%;
-    padding: 10px 5px 5px 5px;
+    display: block;
+    width: 195px;
+    padding: 10px 0 5px 5px;
     color: #111;
     text-decoration: none;
 }
 
-#sidebar ul li a:hover {
+#sidebar ul li:hover {
     background-color: #fafafa;
 }
 
-#sidebar ul li a.highlighted {
+#sidebar ul li.highlighted {
     font-weight: bold;
+    background-color: #fff;
 }
 
 #content {
@@ -90,7 +110,7 @@ ul li {
 
     color: #333;
 
-    padding-left: 30px;
+    padding-left: 40px;
     padding-right: 250px;
 }
 

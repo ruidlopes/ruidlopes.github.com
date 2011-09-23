@@ -11,8 +11,8 @@ $(function() {
 
     // highlights a menu item
     var highlight = function(e, anchor) {
-        links.removeClass("highlighted");
-        (anchor ? anchorById(anchor) : $(this)).addClass("highlighted");
+        $(".highlighted").removeClass("highlighted");
+        (anchor ? anchorById(anchor) : $(this)).parent().addClass("highlighted");
     };
 
     // changes menu highlight according to scroll
