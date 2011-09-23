@@ -1,11 +1,12 @@
 $(function() {
 
     var doc   = $(document),
-        links = $("#sidebar nav a");
+        links = $("#sidebar nav a"),
+        cache = {};
 
     // get the anchor that points to a specific id
     var anchorById = function(id) {
-        return $("#sidebar a[href=#" + id + "]");
+        return cache[id] || (cache[id] = $("#sidebar a[href=#" + id + "]"));
     };
 
     // highlights a menu item
