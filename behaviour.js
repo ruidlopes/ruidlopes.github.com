@@ -1,7 +1,6 @@
 $(function() {
 
     var doc   = $(document),
-        links = $("#sidebar nav a"),
         cache = {};
 
     // get the anchor that points to a specific id
@@ -25,7 +24,7 @@ $(function() {
         doc.scrollTop() <= 0 && highlight(0, "about");
     });
 
-    links.smoothScroll();
+    $("#sidebar nav a").smoothScroll();
 
     // first menu item highlighted by default
     highlight(0, "about");
