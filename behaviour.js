@@ -26,7 +26,6 @@ $(function() {
     });
 
     links.smoothScroll();
-    links.click(highlight);
 
     // first menu item highlighted by default
     highlight(0, "about");
