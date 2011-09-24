@@ -28,10 +28,10 @@ $(function() {
 
     // link activation
     $("#sidebar nav a").smoothScroll({ afterScroll: function() {
-        if (click)
+        if (click) {
             highlight.call(this);
-
-        click = false;
+            click = false;
+        }
     }}).click(function() {
         click = true;
     });
