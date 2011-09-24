@@ -86,6 +86,7 @@ ul li {
 
 #sidebar ul li a {
     display: block;
+    height: 23px;
     width: 195px;
     padding: 10px 0 5px 5px;
     color: #111;
