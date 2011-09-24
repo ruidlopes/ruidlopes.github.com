@@ -101,6 +101,12 @@ ul li {
     background-color: #fff;
 }
 
+#html5logo {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
 #content {
     position: absolute;
     top: 0;
@@ -120,7 +126,7 @@ ul li {
     padding-top: 3em;
 }
 
-#content section.last {
+#follow { /* since it's the last section, let's have more room for scrolling and reading closer to the top */
     height: 100%;
 }
 
