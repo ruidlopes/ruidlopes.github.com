@@ -1,6 +1,7 @@
 $(function() {
 
     var doc   = $(document),
+        click = false,
         cache = {};
 
     // get the anchor that points to a specific id
@@ -16,6 +17,7 @@ $(function() {
 
     // changes menu highlight according to scroll
     $("#content section").waypoint(function() {
+        if (click) return;
         highlight($(this).attr("id"));
     });
 
@@ -24,7 +26,15 @@ $(function() {
         doc.scrollTop() <= 0 && highlight("about");
     });
 
-    $("#sidebar nav a").smoothScroll();
+    // link activation
+    $("#sidebar nav a").smoothScroll({ afterScroll: function() {
+        if (click)
+            highlight.call(this);
+
+        click = false;
+    }}).click(function() {
+        click = true;
+    });
 
     // first menu item highlighted by default
     highlight("about");
