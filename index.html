@@ -1,114 +1,30 @@
-<DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-        <meta name="description" content="Web enthusiast ★ Software Engineer at Google ★ Polymath & Philomath ★ Guitar freak">
-        <meta name="keywords" content="Front End, Web, Web Science, User Experience, UX, Usability, Accessibility, Accessibility Experience, AX, Universal Usability">
-        <meta name="author" content="Rui Lopes">
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="Rui Lopes homepage">
+  <meta name="author" content="Rui Lopes">
+  <meta name="theme-color" content="#282828">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-        <title>Rui Lopes homeground</title>
+  <title>Rui Lopes</title>
 
-        <link rel="alternate" type="application/rss+xml" title="Wikinews RSS" href="http://ruidlopes.posterous.com/rss.xml">
-        <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="complete styling rules" charset="utf-8">
-        <link rel="icon" type="image/png" href="data:image/png;base64,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">
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="jquery.smooth-scroll.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="waypoints.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="behaviour.js" type="text/javascript" charset="utf-8"></script>
-    </head>
-    <body>
-        <section id="sidebar">
-            <header>
-                <hgroup>
-                    <h1>Rui Lopes</h1>
-                    <h2>homeground</h2>
-                </hgroup>
-            </header>
-            <nav>
-                <ul>
-                    <li><a href="#about">about me</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#research">research</a></li>
-                    <li><a href="#art">art</a></li>
-                    <li><a href="#follow">follow me</a></li>
-                </ul>
-            </nav>
-            <a id="html5logo" href="http://www.w3.org/html/logo/">
-                <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64"
-                     alt="HTML5 Powered with CSS3 / Styling, and Semantics"
-                     title="HTML5 Powered with CSS3 / Styling, and Semantics">
-            </a>
-        </section>
-
-        <section id="content">
-            <section id="about">
-                <h2>about me</h2>
-                <p>
-                    I'm Rui Lopes and <em>I approve this message</em>.
-                </p>
-                <p>
-                    I'm a <em>Web enthusiast</em> originally from sunny <a href="http://en.wikipedia.org/wiki/Lisbon">Lisbon, Portugal</a>, but currently
-                    living and loving <a href="http://en.wikipedia.org/wiki/New_York_City">New York City, NY.</a>
-                </p>
-                    I'm currently working at Google on <a href="http://www.google.com/">Search</a>, in the team that develops and
-                    keeps running its front-end. I was also involved in the development some doodles such as the
-                    <a href="http://www.google.com/doodles/robert-moogs-78th-birthday">Moog Doogle</a> and
-                    <a href="http://www.google.com/doodles/doctor-whos-50th-anniversary">Doctor Who's 50th anniversary</a>.
-                </p>
-                <p>
-                    I'm wholeheartedly interested on the different facets of <em>interaction between users and the Web</em>, including UX, usability, accessibility, and mobility.
-                </p>
-                <p>
-                    I'm also the co-founder of <a href="http://boomux.com">boomUX</a>, a <em>User Experience Design consulting</em> company.
-                </p>
-            </section>
-
-            <section id="projects">
-                <h2>projects</h2>
-                <p>
-                    On spare time, I delve into small projects, mostly centred on Web front-end technologies.
-                    I've <em>open-sourced</em> some by-products of these projects (mostly Javascript libraries),
-                    which you can find at <a href="http://github.com/ruidlopes/repositories">my GitHub account</a>.
-                </p>
-            </section>
-
-            <section id="research">
-                <h2>research</h2>
-                <p>
-                    Up until late 2011, I've been a <a href="http://hcim.di.fc.ul.pt/wiki/User:Rui_Lopes">research scientist</a>
-                    embraced on <em>Web accessibility</em> and other user experience studies on the Web, and an <em>Invited Professor</em>
-                    at University of Lisbon.
-                </p>
-                <p>
-                    I've obtained my PhD degree in Software Engineering from the University of
-                    Lisbon in April 2012. The thesis focused on results and implications of
-                    <em>large-scale Web accessibility evaluation</em>. Previously, I earned an MSc degree which addressed <em>hypertext processing for
-                    inclusive design</em>.
-                </p>
-            </section>
-            
-            <section id="art">
-                <h2>art</h2>
-                <p>
-                    In the past I’ve <em>studied Arts, Architecture and Design</em>. I’m still very fond on fine arts, specially artists such as
-                    <a href="http://en.wikipedia.org/wiki/Leonardo_da_Vinci">Leonardo da Vinci</a>, <a href="http://en.wikipedia.org/wiki/Salvador_Dal%C3%AD">Salvador Dalí</a>,
-                    <a href="http://en.wikipedia.org/wiki/Claude_Monet">Claude Monet</a>, <a href="http://en.wikipedia.org/wiki/Roy_Lichtenstein">Roy Lichtenstein</a>,
-                    <a href="http://en.wikipedia.org/wiki/Edgar_Degas">Edgar Degas</a>, <a href="http://en.wikipedia.org/wiki/Frank_Lloyd_Wright">Frank Lloyd Wright</a>,
-                    and <a href="http://en.wikipedia.org/wiki/Alvar_Aalto">Alvar Aalto</a>.
-                </p>
-                <p>
-                    I manage to keep myself sane by listening to all kinds of music and cooking.
-                </p>
-            </section>
-
-            <section id="follow">
-                <h2>follow me</h2>
-                <p>
-                    Follow me on <a href="https://plus.google.com/u/0/110000059440314702293/posts">G+</a>
-                    and <a href="http://twitter.com/ruidlopes">Twitter</a>.
-                </p>
-            </section>
-        </section>
-    </body>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+</head>
+<body>
+  <div>
+    <div id="one-more">
+      <h1>Rui Lopes</h1>
+      <p id="what">software engineer <span>art</span> curious</p>
+      <p id="where">
+        <a href="http://en.wikipedia.org/wiki/Lisbon">lx</a>
+        <a href="http://en.wikipedia.org/wiki/San_Francisco">sf</a>
+        <a href="http://en.wikipedia.org/wiki/New_York_City">nyc</a>
+        <a href="mailto:ruidlopes@gmail.com" id="mail">contact</a>
+      </p>
+    </div>
+  </div>
+</body>
 </html>
